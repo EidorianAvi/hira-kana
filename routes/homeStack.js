@@ -1,5 +1,4 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation';
 import Home from '../screens/home';
 import EnglishToHiragana from '../screens/englishHiragana';
 import EnglishToKatakana from '../screens/englishKatakana';
@@ -42,4 +41,4 @@ const HomeStack = createStackNavigator(screens, {
     }
 });
 
-export default createAppContainer(HomeStack);
+export default HomeStack;
