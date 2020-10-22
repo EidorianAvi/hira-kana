@@ -3,6 +3,8 @@ import Home from '../screens/home';
 import EnglishToHiragana from '../screens/englishHiragana';
 import EnglishToKatakana from '../screens/englishKatakana';
 import HiraganaToKatakana from '../screens/hiraganaKatakana';
+import Header from '../shared/header';
+import React from 'react';
 
 const screens = {
     Home: {
