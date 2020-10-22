@@ -1,12 +1,16 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import Hiragana from '../screens/hiragana';
+import Header from '../shared/header';
+import React from 'react';
 
 const screens = {
     Hiragana: {
         screen: Hiragana,
-        navigationOptions: {
-            title: 'Hiragana',
-        },
+        navigationOptions: ({ navigation }) => {
+            return {
+                headerTitle: () => <Header navigation={navigation} title='Hiragana'/>,
+            }
+        }
     },
 }
 

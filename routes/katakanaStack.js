@@ -1,12 +1,16 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import Katakana from '../screens/katakana';
+import Header from '../shared/header';
+import React from 'react';
 
 const screens = {
     Katakana: {
         screen: Katakana,
-        navigationOptions: {
-            title: 'Katakana',
-        },
+        navigationOptions: ({ navigation }) => {
+            return {
+                headerTitle: () => <Header navigation={navigation} title='Katakana'/>,
+            }
+        }
     },
 }
 

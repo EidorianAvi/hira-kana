@@ -9,9 +9,11 @@ import React from 'react';
 const screens = {
     Home: {
         screen: Home,
-        navigationOptions: {
-            title: 'Kana Nakama',
-        },
+        navigationOptions: ({ navigation }) => {
+            return {
+                headerTitle: () => <Header navigation={navigation} title='Kana Nakama'/>,
+            }
+        }
     },
     EnglishToHiragana: {
         screen: EnglishToHiragana,
