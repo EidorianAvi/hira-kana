@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { globalStyles } from '../styles/global';
 import FlatButton from '../shared/button';
 
@@ -21,6 +21,9 @@ import FlatButton from '../shared/button';
 
     return (
         <View style={globalStyles.container}>
+            <Text style={styles.welcome}>ようこそ!</Text>
+            <Text style={styles.subtext}>(Welcome!)</Text>
+            <Text style={styles.prompt}>Please Select an Option: </Text>
             <FlatButton text='Roman Alphabet to Hiragana' onPress={engToHir}/>
             <FlatButton text='Roman Alphabet to Katakana' onPress={engToKat} />
             <FlatButton text='Hiragana to Katakana' onPress={hirToKat} />
@@ -28,3 +31,22 @@ import FlatButton from '../shared/button';
     )
 
 }
+
+const styles = StyleSheet.create({
+    welcome: {
+        padding: 10,
+        marginTop: 20,
+        fontSize: 30,
+        textAlign: 'center',
+    },
+    subtext: {
+        fontSize: 15,
+        textAlign: 'center',
+        color: 'grey',
+    },
+    prompt: {
+        marginTop: 50,
+        marginBottom: 5,
+        textAlign: 'center',
+    },
+});
