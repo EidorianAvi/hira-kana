@@ -8,7 +8,7 @@ const screens = {
         screen: Hiragana,
         navigationOptions: ({ navigation }) => {
             return {
-                headerTitle: () => <Header navigation={navigation} title='Hiragana'/>,
+                header: () => <Header navigation={navigation} title='Hiragana'/>,
             }
         }
     },

@@ -8,7 +8,7 @@ const screens = {
         screen: Katakana,
         navigationOptions: ({ navigation }) => {
             return {
-                headerTitle: () => <Header navigation={navigation} title='Katakana'/>,
+                header: () => <Header navigation={navigation} title='Katakana'/>,
             }
         }
     },

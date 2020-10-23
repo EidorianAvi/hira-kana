@@ -11,7 +11,7 @@ const screens = {
         screen: Home,
         navigationOptions: ({ navigation }) => {
             return {
-                headerTitle: () => <Header navigation={navigation} title='Kana Nakama'/>,
+                header: () => <Header navigation={navigation} title='Kana Nakama'/>,
             }
         }
     },
