@@ -13,16 +13,16 @@ export default function FlatButton({ text, onPress }) {
 
 const styles = StyleSheet.create({
     button: {
-        elevation: 1,
+        elevation: 4,
         borderRadius: 12,
         paddingVertical: 22,
         paddingHorizontal: 10,
         backgroundColor: '#D2B48C',
         marginTop: 20,
-        shadowOffset: {width: 10, height: 10},
-        shadowColor: '#FFF',
-        shadowOpacity: 1.0,
+        shadowColor: 'black',
+        shadowOffset: { width: 10, height: 10 },
         shadowRadius: 3,
+        shadowOpacity: 1.0,
     },
     buttonText: {
         color: 'maroon',
