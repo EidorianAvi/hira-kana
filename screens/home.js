@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text} from 'react-native';
 import { globalStyles } from '../styles/global';
-
+import FlatButton from '../shared/button';
 
     export default function Home({ navigation }) {
 
@@ -21,10 +21,9 @@ import { globalStyles } from '../styles/global';
 
     return (
         <View style={globalStyles.container}>
-            <Text style={globalStyles.titleText}>Home Screen</Text>
-            <Button title='Roman Alphabet to Hiragana' onPress={engToHir}/>
-            <Button title='Roman Alphabet to Katakana' onPress={engToKat} />
-            <Button title='Hiragana to Katakana' onPress={hirToKat} />
+            <FlatButton text='Roman Alphabet to Hiragana' onPress={engToHir}/>
+            <FlatButton text='Roman Alphabet to Katakana' onPress={engToKat} />
+            <FlatButton text='Hiragana to Katakana' onPress={hirToKat} />
         </View>
     )
 
